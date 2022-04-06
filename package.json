@@ -1,0 +1,64 @@
+{
+  "name": "parcel-react-starter",
+  "description": "Starter template to build React applications",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "flexdinesh@gmail.com",
+  "scripts": {
+    "dev": "parcel public/index.html --port 3000 --open",
+    "build": "parcel build public/index.html",
+    "lint": "eslint . --ext js,ts,tsx"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.2.1",
+    "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "@parcel/transformer-react-refresh-wrap": "^2.2.1",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "autoprefixer": "^10.4.4",
+    "classnames": "^2.3.1",
+    "postcss": "^8.4.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.2",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "proseWrap": "preserve",
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "printWidth": 100
+        }
+      }
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {}
+    }
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "eslint-plugin-react-hooks"
+    ],
+    "extends": [
+      "plugin:react-hooks/recommended"
+    ],
+    "ignorePatterns": [
+      "node_modules/",
+      "dist/"
+    ]
+  }
+  
+}
